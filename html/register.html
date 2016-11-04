@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<header class="login_title register">
+		会员注册
+		<a href="login.html" class='retruns'></a>
+		<a href="#" class='home'></a>
+	</header>
+	<div class="forms">
+		<div><input type="text" placeholder="输入手机号码" id="phone"></div>
+		<div id="pwd-row">
+			<input type="password" id="pwd" value="" placeholder="输入密码">
+			<div id="pwd_on_off">
+			    <input type="hidden" name="switch_flag" value="0"/>  
+			    <p class="round"></p>
+			</div>
+		</div>
+		<div class="resig">
+			<input type="text" placeholder="获取验证码" id="code">
+			<span id="get_code_btn">获取验证码</span>
+		</div>
+		<!-- <p id="read" class="read"><span></span> 我已阅读并同意《会员条款》
+		<input type="hidden" value="0" id="ready"> -->
+		<p class="readbox">
+			<input type="checkbox" id="isRead">
+			<label for="isRead">我已阅读并同意《会员条款》</label>
+		</p>
+
+		<a href="javascript:void(0)" class="next" id="next">下一步</a>
+	</div>
+	<div class="confirm">
+		<h1>请输入正确数字</h1>
+		<p>请输入正确手机号码</p>
+		<span class="close2">关闭</span>
+	</div>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/event.js"></script>
+	<script src="../js/touch.js"></script>
+	<script src="../js/fx.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百搭屋</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="gmu/css/calendars.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	   
+    </script>
+</head>
+<body>
+	<div class="container">
+		<!--图片轮播-->
+				  
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+		            <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+		            <div class="swiper-slide"><img src="img/banner3.jpg" alt=""></div>
+		            
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Arrows -->
+		        <!--<div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>-->
+		    </div>
+		
+		<!--内容-->
+		<section class="main">
+			<ul>
+				<li class="address">
+					<div>
+						<label>入住地</label>
+						<span id="city_name"></span>
+						<input type="hidden" id="city_id">
+						<a href="html/city.html"></a>
+					</div>
+					<p>
+						我的位置
+					</p>
+				</li>
+				<li>
+					<label>入住日</label>
+					<input type="text" id="date_in" readOnly>
+					<em></em>
+				</li>
+				<li>
+					<label>离店日</label>
+					<input type="text" id="date_out" readOnly>
+					<em></em>
+				</li>
+				<li>
+					<label>酒店名</label>
+					<input type="text" id="name" placeholder="酒店名称(选填)">
+				</li>
+			</ul>
+		</section>
+		<footer class="index_ft">
+			 <a href="JavaScript" id="search">搜索酒店</a>
+		</footer>
+	</div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/event.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/fx.js"></script>
+	<script src="gmu/js/gmu.js"></script>
+	<script src="gmu/js/event.js"></script>
+	<script src="gmu/js/parseTpl.js"></script>
+	<script src="gmu/js/touch.js"></script>
+	<script src="gmu/js/widget.js"></script>
+	<script src="gmu/js/highlight.js"></script>
+	<script src="gmu/js/calendar.js"></script>
+	<script src="gmu/js/$picker.js"></script>
+	<script src="gmu/js/matchMedia.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>城市列表</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="container">
+        <header class="city_hd">
+        	选择城市
+        	<a href="" class="return" id="return"></a>
+        </header>
+        <div class="sectisdon" id="container">
+	        <div class="scroll">
+	        	<div class="tipbg">当前</div>
+	        	<div class="cur_address">
+	        		<p>北京市海淀区上地三街</p>
+	        	</div>
+	        	<div class="cur_address">
+	        		<span id="cur_city"></span>
+	        		<div>
+	        			<input type="checkbox" id="check" checked>
+	        			<label for="check"></label>
+	        		</div>
+	        	</div>
+	        	<div class="tipbg">热门</div>
+	        	<ul class="hot_city" id="hot_city">
+	        	</ul>
+	        	<div class="tipbg">更多</div>
+	        	<ul class="more_list" id="more_list">
+	        	</ul>
+	        	<div class="city_box" id="city_box">
+	        	</div>
+	        </div>
+        </div>
+	</div>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/iscroll.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/citydata.js"></script>
+	<script src="../js/city.js"></script>
+</body>
+</html>

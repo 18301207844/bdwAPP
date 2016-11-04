@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>去哪旅行</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+	<div class="orderwrap">
+		<header class="head heads"style="width: 100%; height: 30px; font-size: 1.4rem;text-align: center;line-height: 30px;border-bottom: 1px solid #CCCCCC;">
+			<a href="#" class="return"></a>
+				订单填写
+		</header>
+		<div class="orderbox" id="orderbox">
+			<div class="scroller">
+				<dl class="orserInfo">
+					<dt><img id="pics"></dt>
+					<dd>
+						<h1 id="hotel_name"></h1>
+						<p id="type_name" class="bed_name"></p>
+						<p id="book_price" class="book_price"></p>
+					</dd>
+				</dl>
+		         <div class="cal_list">
+		         	   <p><label>入住</label><input type="hidden" id="date_in">&nbsp;&nbsp;<span id="inText"></span></p>
+		         	   <p><label>离店</label><input type="hidden" id="date_out">&nbsp;&nbsp;<span id="outText"></span></p>
+		         </div>
+			     <h2>房间信息</h2>
+			     <div class="infos">
+			     	<div class="infoTab">
+			     		<div class="go">
+			     			到店时间
+			     		</div>
+			     		<div class="gotime">
+			     			18点之前
+			     		</div>
+			     		<input type="hidden" id="time_id">
+						<div class="gobtn" id="gobtn">
+			     			
+			     		</div>
+			     	</div>
+			     	<div class="infoTab">
+			     		<div class="tabCell">
+			     			房间数量
+			     		</div>
+			     		<div class="showcout">
+			     			<p>
+				     			<a href="javascript:void(0)" id="sub" class="sub no">-</a>
+				     			<input type="text" value="1" readonly="readonly" id="roomcount" class="roomCount">
+				     			<a href="javascript:void(0)" id="add" class="add">+</a>
+			     			</p>
+			     		</div>
+			     	</div>
+			     	<div class="infoTab">
+			     		<div class="tabCell">
+			     			房费小计
+			     		</div>
+			     		<div class="rprice" id="tprice">
+			     		</div>
+						<input type="hidden" id="rprice">
+			     	</div>
+			     </div>
+			     <div id="info-boxs">
+				     <h2>入住人信息</h2>
+				     <div class="cantantIfo" id="info">
+				     	<div class="userInfo">
+				     		<ul class="infos">
+				     			<li><i>姓名</i><input type="text" placeholder="没间只需填写一个姓名" id="userName1" name='userName1'><span class="clear_input">x</span></li>
+				     		</ul>
+				     		<ul class="infos">
+				     			<li><i>证件</i><input type="text" placeholder="入住人身份证好/证件号" id="idcard1" name="idcard1"><span class="clear_input">x</span></li>
+				     		</ul>
+				     	</div>
+				     </div>
+				     <h2>联系人信息</h2>
+				     <ul class="infos">
+				     	<li><i>姓名</i><input type="text" placeholder="联系人姓名" id="name" name="name"><span class="clear_input">x</span></li>
+				     	<li><i>手机</i><input type="text" placeholder="用于接收通知短信" id="phone" name="phone"><span class="clear_input">x</span></li>
+				     </ul>
+			     </div>
+			     <p class="submit"><a href="#" id="booknow">立即预定</a></p>
+			     </div>
+		    </div>
+     </div>
+     <div class="time">
+     	<ul class="timebox">
+     	</ul>
+     	<a href="javascript:void(0)" id="close">取消</a>
+     </div>
+     <div class="mark"></div>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/iscroll.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/order.js"></script>
+</body>
+</html>
